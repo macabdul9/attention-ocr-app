@@ -25,7 +25,6 @@ def load_graph(frozen_graph_filename):
 def getImage(path):
     with open(path, 'rb') as img_file:
         img = img_file.read()
-
     return img
 
 def predict(image):

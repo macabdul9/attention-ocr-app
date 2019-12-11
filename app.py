@@ -54,7 +54,7 @@ def predict(image):
     allProbs = graph.get_tensor_by_name('prefix/probability:0')
 
     img = image#getImage(image)
-    print('hello type{}'.format(type(img)))
+    #print('hello type{}'.format(type(img)))
 
     with tf.Session(graph=graph) as sess:
         (y_out, probs_output) = sess.run([y,allProbs], feed_dict={
@@ -85,7 +85,7 @@ def api_root():
         img.save(in_memory_file)
         data = np.fromstring(in_memory_file.getvalue(), dtype=np.uint8).tobytes()
         prediction = predict(data)
-        print(type(data))
+        #print(type(data))
         # print(prediction)
         # # remove the file so it will prevent from storage overload
         # os.remove(saved_path)
