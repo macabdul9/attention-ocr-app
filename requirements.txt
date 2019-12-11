@@ -9,4 +9,6 @@ tensorflow==1.15.0
 flask_cors==3.0.8
 argparse==1.1
 numpy==1.17.4
-https://files.pythonhosted.org/packages/3f/98/5a99af92fb911d7a88a0005ad55005f35b4c1ba8d75fba02df726cd936e6/tensorflow-1.15.0-cp36-cp36m-manylinux2010_x86_64.whl
+tensorflow==1.15.0
+
+
